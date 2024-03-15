@@ -1,0 +1,28 @@
+# === UE Generated Files
+/[Bb]uild
+/[Bb]uilds
+/Binaries
+/DerivedDataCache
+/Intermediate
+/Saved
+
+# === VS & VSC Generated Files 
+.vs
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.opendb
+*.opensdf
+*.sdf
+*.sln
+.vscode
+**/.history
+
+# === RTPS Specific
+Content/*
+!Content/RTPS/
+!Content/__ExternalActors__/
+!Content/Collections/

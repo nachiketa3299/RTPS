@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "RTPS",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "E:\\Epic Games\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "RTPS Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Debug",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Debug",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPS Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Debug",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"DebugGame",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"DebugGame",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPS Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"DebugGame",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Development",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Development",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPS Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Development",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Test",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Test",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPS Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Test",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Shipping",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Shipping",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPS Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPS Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPS",
+					"Win64",
+					"Shipping",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"Debug",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"Debug",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPSEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"Debug",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPSEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"Development",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"Development",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RTPSEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "RTPSEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RTPSEditor",
+					"Win64",
+					"Development",
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch RTPS (Debug)",
+				"request": "launch",
+				"program": "E:\\OneDrive\\Projects\\RTPS\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "RTPS Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPS (DebugGame)",
+				"request": "launch",
+				"program": "E:\\OneDrive\\Projects\\RTPS\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "RTPS Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPS (Development)",
+				"request": "launch",
+				"program": "E:\\OneDrive\\Projects\\RTPS\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "RTPS Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPS (Test)",
+				"request": "launch",
+				"program": "E:\\OneDrive\\Projects\\RTPS\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "RTPS Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPS (Shipping)",
+				"request": "launch",
+				"program": "E:\\OneDrive\\Projects\\RTPS\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "RTPS Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPSEditor (Debug)",
+				"request": "launch",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "RTPSEditor Win64 Debug Build",
+				"args": [
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject"
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPSEditor (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "RTPSEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject"
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch RTPSEditor (Development)",
+				"request": "launch",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "RTPSEditor Win64 Development Build",
+				"args": [
+					"E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject"
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=E:\\OneDrive\\Projects\\RTPS\\RTPS.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "E:\\Epic Games\\UE_5.3"
+			}
+		]
+	}
+}

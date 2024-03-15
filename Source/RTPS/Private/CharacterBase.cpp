@@ -21,8 +21,9 @@ ACharacterBase::ACharacterBase()
 
 
     GetCharacterMovement()->bUseSeparateBrakingFriction = true;
+    GetCharacterMovement()->MaxStepHeight = 50.f;
     SpeedOnNormal = 600.f;
-    SpeedOnSprint = 800.f;
+    SpeedOnSprint = 1200.f;
 }
 
 void ACharacterBase::BeginPlay()
